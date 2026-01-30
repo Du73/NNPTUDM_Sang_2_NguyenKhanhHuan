@@ -1,0 +1,54 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100,
+      "isDeleted": true
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "3",
+      "title": "Lap trinh Java",
+      "views": 0,
+      "isDeleted": false
+    },
+    {
+      "id": "4",
+      "title": "Lap trinh Java",
+      "views": 0,
+      "isDeleted": false
+    },
+    {
+      "id": "5",
+      "title": "a title",
+      "views": 0,
+      "isDeleted": false
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "Scam à",
+      "postId": ""
+    },
+    {
+      "id": "3",
+      "text": "Alo",
+      "postId": "3"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
