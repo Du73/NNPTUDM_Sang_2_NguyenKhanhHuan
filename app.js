@@ -1,6 +1,6 @@
 const API_URL = "http://localhost:3000";
 
-// --- HELPER FUNCTIONS ---
+
 
 const getNextId = (data) => {
   if (data.length === 0) return "1";
@@ -8,7 +8,7 @@ const getNextId = (data) => {
   return (maxId + 1).toString();
 };
 
-// --- POSTS LOGIC (Soft Delete & Auto-ID) ---
+
 
 async function getPosts() {
   const res = await fetch(`${API_URL}/posts`);
@@ -53,7 +53,7 @@ function renderPosts(posts) {
   });
 }
 
-// --- COMMENTS LOGIC (Full CRUD) ---
+
 
 async function createComment(text, postId) {
   const res = await fetch(`${API_URL}/comments`);
